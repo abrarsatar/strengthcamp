@@ -1,0 +1,24 @@
+<div class = "row" id = "signPartial">
+  <div class ="col-md-6" >
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <h1>{{hCtrl.message}}</h>
+  </div>
+    <div id = "demoForm" class = "col-md-4">
+          <!--{{hCtrl.hqList}}-->
+          <h1>Sign Up for Open Gym</h1><br>
+          <form ng-submit="hCtrl.makeAHero()"><br>
+              <input class="form-control" ng-model="hCtrl.newHero.name" placeholder="Name"> <br>
+              <input class="form-control" ng-model="hCtrl.newHero.email"
+              placeholder="Email"><br><br>
+              <input class="form-control" ng-model="hCtrl.newHero.phone"
+              placeholder="Phone Number"><br><br>
+              <input  type="checkbox" ng-model="hCtrl.newHero.current" /> I have read and agree to the <a href = "">terms & condition</a>
+              <br><br><br>
+              <input type="submit" class="btn btn-info">
+          </form>
+          <br>
+  </div>
+</div>

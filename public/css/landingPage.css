@@ -1,0 +1,104 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+.navbar {
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: black;
+}
+/* Add a gray background color and some padding to the footer */
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.carousel-inner  {
+  width: 100%; /* Set width to 100% */
+  margin: auto;
+  height:600px;
+  overflow: hidden;
+}
+.carousel-inner  img{
+  width: 100%; /* Set width to 100% */
+  margin: none;
+  min-height:300px;
+  display: inline;
+}
+/* Hide the carousel text when the screen is less than 600 pixels wide */
+@media (max-width: 600px) {
+.carousel-caption {
+  display: none;
+}
+}
+.prompt {
+  z-index: 1;
+  position : fixed;
+  border-radius: 3px;
+  width:500px;
+  height: 300px;
+  top:50%;
+  left:50%;
+  opacity:1;
+}
+#demoForm {
+  border: 1px solid silver;
+  border-radius: 5px;
+  margin-top:50px;
+  padding:40px;
+  min-height:600px;
+  background-color: white;
+
+}
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    min-height:700px;
+    width: 100%;
+    overflow: hidden;
+    background: #000;
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    width: 100%;
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    opacity:.75;
+}
+.video-container video.fillWidth {
+    width: 100%;
+    height:100%;
+}
+#poster {
+  color : white;
+  position:relative;
+  top:50%;
+  left:25%;
+  width:700px;
+  height: 300px;
+}
+#signPartial {
+  background-size: 100%;
+  background-image:url("/videos/strengthfam.png");
+}

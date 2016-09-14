@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Landing Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+  <link rel="stylesheet" href="/css/landingPage.css">
+  <script src = "/js/landingPage.js"></script>
+  <script src = "/js/landing/landing.hCtrl.js"></script>
+  <script src = "/js/landing/landing.apiFact.js"></script>
+</head>
+
+
+<body ng-app = "landingPage" ng-controller = "NavCtrl as nc">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#/"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <a href = "#/"><img src = "/videos/logo.png"  style = "height:50px" class = "left"/></a>
+      <ul class="nav navbar-nav pull-right">
+        <li><a href="#/">Home</a></li>
+        <li><a href="#/signUp">Open Gym</a></li>
+        <li><a href="#/about">About</a></li>
+        <li><a href="#/contact">Contact</a></li>
+
+        <li></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div ng-view ="">
+</div>
+
+<br>
+
+<footer class="container-fluid text-center footer">
+<ul class="nav navbar-nav">
+    <a href="/login"><span class="glyphicon glyphicon-log-in"></span> Login!</a>
+</ul>
+</footer>
+
+</body>
+</html>
