@@ -92,13 +92,16 @@ footer {
 }
 #poster {
   color : white;
-  position:relative;
+  position: relative;
   top:50%;
-  left:25%;
+  left:35%;
   width:700px;
   height: 300px;
 }
 #signPartial {
   background-size: 100%;
   background-image:url("/videos/strengthfam.png");
+}
+#signPartial h2{
+  color:white;
 }
